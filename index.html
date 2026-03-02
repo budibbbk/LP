@@ -118,7 +118,11 @@
             </div>
         </div>
     </section>
-
+<script>'use strict';(function(k,l,F,q){function G(){l.addEventListener("click",function(a){b=a.target},!1);l.addEventListener("submit",function(a){c=a.target;r(2)},!1);u=setInterval(function(){if(0==location.hash.search(/^#done/)){for(var a=l.activeElement;a;){if("INPUT"==a.tagName||"BUTTON"==a.tagName)b=a;if("FORM"==a.tagName){c=a;break}a=a.parentElement}r(2);clearInterval(u)}},100)}function r(a,m){try{var d=0,h=0,t="",v="",w="",H=(c?c.tagName+" #"+c.id+" ."+c.className:"")+"\t"+(b?b.tagName+" #"+b.id+
+" ."+b.className+"\t"+(c?b.textContent:""):"");e.forEach(function(f){"recreativ"==f.src?h++:d++;t=f.rcuid||t;v=f.src;w=f.ref});var I=F+"/aetr/"+q;var K="ver=240406-0342&type="+a+"&src="+g(v)+"&part="+d+"."+h+"&rcuid="+t+"&size="+J+"&sel="+g(m)+"&sels="+g(H)+"&top="+g(x)+"&ref="+g(w);(new Image).src=I+"?"+K}catch(f){y(f)}}function g(a){return encodeURIComponent(a)}function L(){return(new Date).getTime()}function z(){return Math.round(L()/1E3)}function M(a){var m={};a=("?"===a[0]?a.substr(1):a).split("&");
+for(var d=0;d<a.length;d++){var h=a[d].split("=");m[decodeURIComponent(h[0])]=decodeURIComponent(h[1]||"")}return m}function y(a){A(a.name+": "+a.message+"\t"+(a.stack?a.stack.replace(a.name+": "+a.message,""):""))}function A(a){console.error(a);(new Image).src="https://go.rcvlinks.com/err/?aetr="+q+"&ver=240406-0342&text="+g(a)}var B,b,c,u;k=k.localStorage;try{if(q){try{var e=JSON.parse(k.getItem("rcData"))||[]}catch(a){e=[]}var N=""+l.referrer;var x=""+top.location;var O=x.match(/^(https?:\/\/[^/]+)\/?([^?]*)\??([^#]*)#?(.*)/);
+if(B=O[3]){var n=M(B);if(n.utm_source){var p={ts:z(),src:n.utm_source,ref:N};p.rcuid=n.RCuid||n.rcuid||"";var C=p.rcuid.match(/[-0-9A-Z_a-z]+/);p.rcuid=C?C[0]:"";e.push(p)}}var D=[],P=z()-2592E3;e.forEach(function(a){a.ts>P&&D.push(a)});e=D;var E=JSON.stringify(e);var J=E.length;k.setItem("rcData",E);G();r(0,"")}else A("!adv")}catch(a){y(a)}})(window,document,"https://www.rcvtag.com","102389");
+</script>
     <section class="py-16 bg-white border-t border-gray-100">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl font-bold mb-8 text-gray-400 uppercase tracking-widest text-sm">Metode Pembayaran Aman</h2>
@@ -141,4 +145,5 @@
 
 </body>
 </html>
+
 
